@@ -29,11 +29,9 @@ var bcrypt   = require('bcrypt-nodejs');
 //Creating a schema for Users
 var userSchema = mongoose.Schema({
     user: {
-		username: { type: String, required: true, unique: true },
-        	email: { type: String, required: true, unique: true },
+  	        email: { type: String, required: true, unique: true },
         	password: { type: String, required: true },
-        	userID: { type: String, required: true, unique: true },  // Adding Id to identify each player uniquely
-		firstName: String,
+        	firstName: String,
 		lastName: String,
 		location: String,
 		lastRole: Boolean
