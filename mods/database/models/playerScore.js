@@ -6,6 +6,7 @@ Version: 0.0.5
 *******************************************************************************/
 
 var mongoose = require('mongoose');
+var mongo = require('mongodb'); // Included Mongo
 
 /// Schema for player score -- How do we relate this to the user though? ask Raga.
 var playerScoreSchema = mongoose.Schema({
